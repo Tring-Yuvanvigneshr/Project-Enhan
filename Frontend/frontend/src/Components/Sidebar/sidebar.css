@@ -1,0 +1,53 @@
+.c-custom-sidebar {
+  width: 250px;
+  height: 100vh;
+  background: #f4f4f4;
+  padding: 20px;
+  position: fixed;
+  margin-top: -10px;
+}
+
+.custom-profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.custom-profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.custom-profile-name {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.custom-nav-list {
+  list-style: none;
+  padding: 0;
+}
+
+.custom-nav-list li {
+  margin: 15px 0;
+}
+
+.custom-nav-list li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.custom-nav-list li a.custom-active,
+.custom-nav-list li a:hover {
+  color: rgb(108, 108, 205);
+}
+
+.custom-logo {
+  display: flex;
+}

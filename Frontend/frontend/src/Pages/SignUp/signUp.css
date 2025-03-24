@@ -1,0 +1,148 @@
+.signup-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-headder {
+    text-align: center;
+}
+
+.signup-container {
+    overflow-y: auto;
+    width: 50%;
+    height: 90%;
+    background-color: var(--primary-color);
+    padding: 12px 55px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: #666 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.signup-container h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.signup-container label {
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    color: var(--text-color);
+    margin-bottom: 5px;
+    display: block;
+}
+
+.signup-container input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--text-color);
+    border: 1px solid #ccc;
+    outline: none;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.error-signUp {
+    color: #ff4444;
+    font-size: 12px;
+    margin-bottom: 5px;
+    display: block;
+    text-align: center;
+}
+
+.register-btn {
+    width: 100%;
+    background-color: #007bff;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+    color: white;
+}
+
+.register-btn:hover {
+    background-color: #0056b3;
+}
+
+.signin-redirect {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.signin-redirect a {
+    color: blue;
+    text-decoration: none;
+}
+
+.role-selection {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.role-btn {
+    padding: 10px 15px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    width: 50%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #ccc;
+}
+
+.role-btn:nth-child(1) {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.role-btn:nth-child(2) {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.role-btn:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.role-btn.selected {
+    background-color: blue;
+    color: white;
+}
+
+.password-container-signup {
+    position: relative;
+    display: inline;
+}
+
+.password-input-signup {
+    padding: 8px 40px 8px 8px;
+}
+
+.password-toggle-signup {
+    position: absolute;
+    right: 8px;
+    top: 25%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}

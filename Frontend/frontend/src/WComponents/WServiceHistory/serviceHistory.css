@@ -1,0 +1,93 @@
+.service-history {
+  padding: 20px;
+  margin-left: 270px;
+  margin-top: 70px;
+}
+
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter-dropdown {
+  min-width: 200px;
+}
+
+.booking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.booking-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.booking-card:hover {
+  background-color: #f4f4f4;
+}
+
+.left-section {
+  flex: 1;
+}
+
+.right-section {
+  text-align: right;
+}
+
+.right-section button {
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.right-section button:hover {
+  background-color: #135ba1;
+}
+
+.status-pending {
+  color: orange;
+}
+
+.status-accepted {
+  color: green;
+}
+
+.status-completed {
+  color: #4caf50;
+}
+
+.status-cancelled {
+  color: red;
+}
+
+.booking-card div {
+  margin-bottom: 5px;
+}
+
+.view-details-btn {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.view-details-btn:hover {
+  background-color: #0056b3;
+}

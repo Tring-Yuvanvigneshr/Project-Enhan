@@ -1,0 +1,129 @@
+.booking-details-container {
+    width: 100%;
+    height: 100vh;
+    max-width: 1100px;
+    margin: auto;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  
+  .booking-details-header {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #34495e;
+    margin-bottom: 1rem;
+  }
+  
+  .booking-details-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    flex-grow: 1;
+    overflow: hidden;
+  }
+  
+  .booking-details-section,
+  .customer-details {
+    background-color: #f8f9fd;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    padding: 1.5rem;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+  }
+  
+  .booking-details-section h4,
+  .customer-details h4 {
+    margin-bottom: 0.8rem;
+    color: #34495e;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+  }
+  
+  .job-description-textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 0.95rem;
+    background-color: #f4f4f4;
+    color: #333;
+    resize: none;
+    margin-bottom: 1rem;
+  }
+  
+  .booking-details-section p,
+  .customer-details p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  
+  .booking-action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 1rem;
+  }
+  
+  .btn {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .btn-accept {
+    background-color: #4caf50;
+  }
+  
+  .btn-accept:hover {
+    background-color: #3a9e42;
+  }
+  
+  .btn-reject {
+    background-color: #e74c3c;
+  }
+  
+  .btn-reject:hover {
+    background-color: #c0392b;
+  }
+  
+  .btn-complete {
+    background-color: #3498db;
+  }
+  
+  .btn-complete:hover {
+    background-color: #2980b9;
+  }
+  
+  .booking-details-section p,
+  .customer-details p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  
+  .booking-action-buttons {
+    padding-bottom: 1rem;
+  }
+  

@@ -1,0 +1,165 @@
+.profile-info {
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 450px;
+    font-family: "Arial", sans-serif;
+}
+
+.profile-info h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.profile-info label {
+    display: block;
+    margin-top: 12px;
+    font-weight: 600;
+    color: #555;
+    font-size: 14px;
+}
+
+.profile-info input,
+.profile-info textarea,
+.profile-info select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.profile-info input:focus,
+.profile-info textarea:focus,
+.profile-info select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+.profile-info textarea {
+    height: 70px;
+    resize: none;
+}
+
+.profile-info select {
+    background-color: #fff;
+    background-size: 12px;
+    cursor: pointer;
+}
+
+.profile-info select:hover {
+    border-color: #007bff;
+    background-color: #f9f9f9;
+}
+
+.profile-info select option {
+    padding: 10px;
+}
+
+.get-location-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.get-location-btn.success {
+    background: #28a745;
+}
+
+.get-location-btn:hover {
+    background: #0056b3;
+}
+
+.save-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background: #000;
+    color: white;
+}
+
+.save-btn:hover {
+    background: #333;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.success-message {
+    color: green;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.MuiAlert-root {
+    font-size: 14px;
+}
+
+.phone-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 6px;
+}
+
+.phone-container input {
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    width: 150px;
+}
+
+.phone-container input:disabled {
+    background: #e9ecef;    
+    width: 60px;
+}
+
+.send-otp-btn {
+    background: #007bff;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    height: 40px;
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.send-otp-btn:hover {
+    background: #0056b3;
+}

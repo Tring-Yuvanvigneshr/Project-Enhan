@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(252, 252, 250);
+    --secondary-color: #acaba9;
+    --background-color: #eaeaea;
+    --text-color: #121212;
+}

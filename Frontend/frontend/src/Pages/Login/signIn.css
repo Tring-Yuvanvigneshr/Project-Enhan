@@ -1,0 +1,91 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loginHeadder {
+  margin-bottom: 1rem;
+}
+
+.login-container form {
+  margin-top: 3%;
+  width: 28rem;
+  height: 22rem;
+  background-color: var(--primary-color);
+  box-shadow: #666 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  border-radius: 15px;
+  text-align: center;
+}
+
+h2 {
+  color: var(--text-color);
+  font-size: 2rem;
+  margin-top: 3%;
+}
+
+.login-box {
+  margin-left: 11%;
+  margin-right: 11%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.login-box input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-box p {
+  font-size: 0.9rem;
+  padding-top: 2%;
+  margin-left: 2%;
+}
+
+.login-box span {
+  color: blue;
+  cursor: pointer;
+}
+
+#login-btn {
+  height: 50px;
+  margin-top: 1.7rem;
+  padding: 5px 8rem;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#login-btn:hover {
+  background-color: #0056b3;
+}
+
+.password-container {
+  position: relative;
+  display: inline;
+}
+
+.password-input {
+  padding: 8px 40px 8px 8px;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 8px;
+  top: 15%;
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
