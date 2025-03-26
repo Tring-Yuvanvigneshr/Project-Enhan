@@ -1,5 +1,5 @@
 const pool = require("../../../config/db");
-const { authenticateUser, customerAuthorization } = require("../../../middleware/authMiddleware")
+const { authenticateUser, customerAuthorization } = require("../../../auth/authFunctions")
 
 const customer_resolvers = {
   Query: {

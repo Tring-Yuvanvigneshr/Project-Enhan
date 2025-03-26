@@ -1,6 +1,6 @@
 const pool = require("../../../config/db");
-const { hashPassword, verifyPassword, generateToken } = require("../../../auth/auth");
-const { authenticateUser } = require("../../../middleware/authMiddleware")
+const { hashPassword, verifyPassword, generateToken } = require("../../../auth/authToken");
+const { authenticateUser } = require("../../../auth/authFunctions")
 
 const userresolvers = {
   Query: {},

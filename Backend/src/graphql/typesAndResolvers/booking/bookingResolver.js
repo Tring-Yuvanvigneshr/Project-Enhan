@@ -1,15 +1,12 @@
 const pool = require("../../../config/db")
-const { authenticateUser, customerAuthorization, workerAuthorization } = require("../../../middleware/authMiddleware")
-const jwt = require("jsonwebtoken");
+const { authenticateUser, customerAuthorization, workerAuthorization } = require("../../../auth/authFunctions")
 
 const booking_resolver = {
   Query: {
     getBookingByCustomerAndWorker: async (_, { customer_id, worker_id }, req) => {
       try {
-        // console.log(req.headers.authorization);  
 
         const user = authenticateUser(req.headers.authorization)
-        // console.log(user.role)
 
         customerAuthorization(user)
 

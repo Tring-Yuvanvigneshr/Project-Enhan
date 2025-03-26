@@ -1,11 +1,10 @@
 const pool = require("../../../config/db")
-const { authenticateUser, customerAuthorization, workerAuthorization } = require("../../../middleware/authMiddleware")
+const { authenticateUser, customerAuthorization, workerAuthorization } = require("../../../auth/authFunctions")
 
 const worker_resolvers = {
   Query: {
     workers: async (_, __, req) => {
       try {
-
         const user = authenticateUser(req.headers.authorization)
         customerAuthorization(user)
         const { rows } = await pool.query(`
@@ -80,7 +79,7 @@ const worker_resolvers = {
         FROM 
             customers c
         JOIN 
-            workers w ON c.location IS NOT NULL
+            workers w ON ST_Distance(c.location, w.location) <= 3000
         WHERE 
             c.user_id = $1
         ORDER BY 
